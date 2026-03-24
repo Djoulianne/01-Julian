@@ -12,7 +12,7 @@ h1 {
 
 body {
   font-family: variables.$font-main;
-  color: variables.$color-primary;
+  color: variables.$color-primary; 
   background: variables.$color-bg;
   @media (min-width: 400px) {
     background: rgb(252, 255, 252);
@@ -25,11 +25,7 @@ body {
   background: variables.$color-primary;
   margin: 0 auto;
   font-family: variables.$txt-commun;
-  @include mixins.bp('desktop') {
-    background: yellow;
-  }
 }
-/* Nav links */
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -385,6 +381,9 @@ footer {
   background: none;
   padding: 0;
   width: 120px;  /* largeur fixe pour que chaque radio soit bien centré sous son icône */
+  img {
+    margin-block: -1rem -3.5rem;
+  }
 }
 .overlay-close {
   position: absolute;
@@ -418,4 +417,26 @@ footer {
   width: 200px;
   min-height: 250px;
   padding: 10px;
+}
+.overlay-radio {
+  justify-content: center;
+}
+/* ---------- INPUT ---------- */
+.overlay-input {
+  position: relative;
+  width: 180px;
+  margin: 12px 5px;
+  margin-top: 20px;
+  border: none;
+  background: transparent;
+  &::placeholder {
+    color: white;
+  }
+  border-block-end: 2px solid #fff;
+  padding-inline: 2px;
+  padding-block: .5rem;
+}
+
+.binari {
+  width: 110px;
 }
