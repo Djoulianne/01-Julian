@@ -16,7 +16,7 @@
     </div>
 
     <ul class="nav-links">
-      <li><a class="nav-item active" href="#">Home</a></li>
+      <li><a class="nav-item" href="#">Home</a></li>
       <li><a class="nav-item" href="quizz.html">Quiz</a></li>
       <li><a class="nav-item" href="#">Results</a></li>
     </ul>
@@ -29,7 +29,7 @@
 
   <!-- HERO -->
   <div class="hero">
-    <h1>Quote King or Movie Fan ?</h1>
+    <h1>QUOTE <span class="king">KING</span>  OR MOVIE FAN ?</h1>
     <p>Test your cinema knowledge by matching iconic movie quotes to their films.</p>
     <a class="hero-link" onclick="openOverlay()">START QUIZ</a>
     <a class="hero-link2" href="#">BROWSE BY CATEGORY</a>
@@ -106,21 +106,27 @@
     </div>
   </footer>
       <!-- OVERLAY -->
-<!-- OVERLAY -->
 <div class="overlay" id="overlay">
   <div class="overlay-box">
     <button class="overlay-close" onclick="closeOverlay()">✕</button>
     <h2 class="overlay-title">Who are you ?</h2>
+    <h3 class="overlay-subtitle">Are you a king, a queen or...</h2>
     <div class="overlay-cards">
-
       <div class="overlay-card">
-        <img src="../src/images/king.svg" class="character" alt="Man">
-        <img src="../src/images/queen.svg" class="character" alt="Woman">
-        <img src="../src/images/binari.svg" class="character" alt="Neutral">
-
+        <img src="../src/images/king.svg" alt="King" class="overlay-icon">
+        <input type="radio" name="avatar" class="overlay-radio">
       </div>
+      <div class="overlay-card">
+        <img src="../src/images/binari.svg" alt="Neutral" class="overlay-icon">
+        <input type="radio" name="avatar" class="overlay-radio">
+      </div>
+      <div class="overlay-card">
+        <img src="../src/images/queen.svg" alt="Queen" class="overlay-icon">
+        <input type="radio" name="avatar" class="overlay-radio">
       </div>
     </div>
+
+    <button class="overlay-btn" onclick="window.location.href='quizz.html'">START QUIZ</button>
   </div>
 </div>
 <script src="scripts/script.js"></script>  <!--pour charger script javascript -->
