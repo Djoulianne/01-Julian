@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/style_overlay.css"> 
+  <link rel="stylesheet" href="styles/style_category_overlay.css"> 
     <title>Home</title>
 </head>
 <body>
@@ -30,12 +31,14 @@
 
   <!-- HERO -->
   <div class="hero">
-    <h1>QUOTE <span class="king">KING</span>  OR MOVIE FAN ?</h1>
+    <h1>QUOTE <span class="king">KING</span> OR MOVIE FAN ?</h1>
     <div class="blackbackground">
-    <p>Test your cinema knowledge by matching iconic movie quotes to their films.</p>
-    <a class="hero-link" onclick="openOverlay()">START QUIZ</a>
-    <a class="hero-link2" href="#">BROWSE BY CATEGORY</a>
-    <div class="quiz-types">
+      <p>Test your cinema knowledge by matching iconic movie quotes to their films.</p>
+      <a class="hero-link" onclick="openOverlay()">START QUIZ</a> 
+      <a class="hero-link2" onclick="openCategoryOverlay()">BROWSE BY CATEGORY</a>
+      </div>
+  </div>
+     <div class="quiz-types">
       <div class="quiz-card">
         <span class="qc-icon">A</span>
         <div class="qc-title">Iconic Quotes</div>
@@ -52,8 +55,6 @@
         <div class="qc-desc">Receive personalized feedback based on your performance.</div>
       </div>
     </div>
-  </div>
-</div>
   <section class="bottom-section">
 
     <!-- GAUCHE : Top Players -->
@@ -87,7 +88,9 @@
       <p id="text" class="starwars" style="display:none">Star Wars</p>
       <button class="reveal-btn" onclick="showHide()">REVEAL ANSWER</button>
     </div>  
-  </section>  
+  </section> 
+  <div class="footer_top"></div>
+      <!-- FOOTER -->
   <footer>
     <div>
       <p class="footer-title">Movie Kings</p>
@@ -107,6 +110,8 @@
       <a href="#">Rotten Tomatoes</a>
     </div>
   </footer>
+  <div class="footer_bottom"> © 2026 Movie Kings</div>
+
       <!-- OVERLAY -->
 <div class="overlay" id="overlay">
   <div class="overlay-box">
@@ -134,6 +139,30 @@
         <!-- START QUIZ -->
         <button class="overlay-btn" onclick='window.location.href="quizz.html"'>START QUIZ</button>
     </form>
+  </div>
+        <!-- CATEGORY OVERLAY -->
+  <div class="categoryOverlay" id="categoryOverlay">
+    <div class="overlay-box category-box">
+      <button class="overlay-close" onclick="closeCategoryOverlay()">✕</button>
+      
+      <h2 class="overlay-title">SELECT CATEGORY</h2>
+      <p class="overlay-subtitle">Choose a movie category to focus your quiz, or select "All Categories" for a mixed experience.</p>
+      
+      <div class="category-list">
+        <button class="cat-option active">ALL CATEGORIES</button>
+        <button class="cat-option">ACTION</button>
+        <button class="cat-option">DRAMA</button>
+        <button class="cat-option">THRILLER</button>
+        <button class="cat-option">ROMANCE</button>
+        <button class="cat-option">SCI-FI</button>
+        <button class="cat-option">FANTASY</button>
+      </div>
+  
+      <div class="overlay-footer">
+        <button class="footer-btn cancel" onclick="closeCategoryOverlay()">CANCEL</button>
+        <button class="footer-btn start" onclick='window.location.href="quizz.html"'>START QUIZ</button>
+      </div>
+    </div>
   </div>
 </div>
 <script src="scripts/script.js"></script> 

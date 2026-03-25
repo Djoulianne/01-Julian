@@ -10,6 +10,7 @@ function showHide() {
   }
 }
 // START QUIZZ //
+// Fonction pour l'overlay n°1 (Avatar / Pseudo)
 function openOverlay() {
   document.getElementById('overlay').style.display = 'flex';
 }
@@ -17,3 +18,20 @@ function openOverlay() {
 function closeOverlay() {
   document.getElementById('overlay').style.display = 'none';
 }
+
+// Fonction pour l'overlay n°2 (Catégories)
+function openCategoryOverlay() {
+  document.getElementById('categoryOverlay').style.display = 'flex';
+}
+
+function closeCategoryOverlay() {
+  document.getElementById('categoryOverlay').style.display = 'none';
+}
+
+// Gestion de la sélection visuelle des catégories (le contour jaune)
+document.querySelectorAll('.cat-option').forEach(button => {
+  button.addEventListener('click', function() {
+      document.querySelectorAll('.cat-option').forEach(btn => btn.classList.remove('active'));
+      this.classList.add('active');
+  });
+});
