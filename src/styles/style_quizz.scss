@@ -83,10 +83,12 @@ body {
 }
 
 .brand-name {
-  color: variables.$black;
   font-family: variables.$font-main;
-  font-size: 22px;
   letter-spacing: 1px;
+  font-size: 16px;
+	font-weight: 600;
+	color: variables.$color_2;
+	letter-spacing: -0.3px;
 }
 
 .btn-stop {

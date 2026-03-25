@@ -73,10 +73,12 @@ body {
 }
 
 .brand-name {
-  color: #111111;
   font-family: "MyFont", Arial, sans-serif;
-  font-size: 22px;
   letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #111;
+  letter-spacing: -0.3px;
 }
 
 .btn-stop {
