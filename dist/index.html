@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/main.css"> 
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/style_overlay.css"> 
     <title>Home</title>
 </head>
 <body>
@@ -30,6 +31,7 @@
   <!-- HERO -->
   <div class="hero">
     <h1>QUOTE <span class="king">KING</span>  OR MOVIE FAN ?</h1>
+    <div class="blackbackground">
     <p>Test your cinema knowledge by matching iconic movie quotes to their films.</p>
     <a class="hero-link" onclick="openOverlay()">START QUIZ</a>
     <a class="hero-link2" href="#">BROWSE BY CATEGORY</a>
@@ -51,7 +53,7 @@
       </div>
     </div>
   </div>
-
+</div>
   <section class="bottom-section">
 
     <!-- GAUCHE : Top Players -->
@@ -130,10 +132,10 @@
         <!-- NICKNAME -->
         <input type="text" name="text" class="overlay-input" placeholder="NICKNAME">
         <!-- START QUIZ -->
-        <button class="overlay-btn" onclick="window.location.href='quizz.html'">START QUIZ</button>
+        <button class="overlay-btn" onclick='window.location.href="quizz.html"'>START QUIZ</button>
     </form>
   </div>
 </div>
-<script src="scripts/script.js"></script>  <!--pour charger script javascript -->
+<script src="scripts/script.js"></script> 
 </body>
 </html>
