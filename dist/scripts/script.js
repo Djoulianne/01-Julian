@@ -19,11 +19,10 @@ function closeOverlay() {
   document.getElementById('overlay').style.display = 'none';
 }
 
-// Fonction pour l'overlay n°2 (Catégories)
+// Overlay 2
 function openCategoryOverlay() {
   document.getElementById('categoryOverlay').style.display = 'flex';
 }
-
 function closeCategoryOverlay() {
   document.getElementById('categoryOverlay').style.display = 'none';
 }

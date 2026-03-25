@@ -115,8 +115,8 @@
       <!-- OVERLAY -->
 <div class="overlay" id="overlay">
   <div class="overlay-box">
-    <form action="">
-      <button class="overlay-close" onclick="closeOverlay()">✕</button>
+    <form action="quizz.html" method="get">
+      <button type="button" class="overlay-close" onclick="closeOverlay()">✕</button>
       <h2 class="overlay-title">Who are you ?</h2>
       <h3 class="overlay-subtitle">Are you a king, a queen or...</h2>
         <div class="overlay-cards">
@@ -137,9 +137,10 @@
         <!-- NICKNAME -->
         <input type="text" name="text" class="overlay-input" placeholder="NICKNAME">
         <!-- START QUIZ -->
-        <button class="overlay-btn" onclick='window.location.href="quizz.html"'>START QUIZ</button>
+        <button class="overlay-btn">START QUIZ</button>
     </form>
   </div>
+</div>
         <!-- CATEGORY OVERLAY -->
   <div class="categoryOverlay" id="categoryOverlay">
     <div class="overlay-box category-box">
@@ -165,6 +166,7 @@
     </div>
   </div>
 </div>
+
 <script src="scripts/script.js"></script> 
 </body>
 </html>
